@@ -1,0 +1,31 @@
+<?php
+
+	$host="localhost"; // Host name 
+	$username="root"; // Mysql username 
+	$password=""; // Mysql password 
+	$db_name="wpmini"; // Database name 
+	$link=mysqli_connect("$host", "$username", "$password")or die("cannot connect"); 
+	mysqli_select_db($link,"$db_name")or die("cannot select DB");
+	$name=$_REQUEST["userName"];
+	$email=$_REQUEST["userEmail"];
+	$contact=$_REQUEST["userPhone"];
+	$subject=$_REQUEST["userMsg"];
+	$query="INSERT INTO `contact_us`(`name`, `email`, `mobile`, `subject`) VALUES ('$name','$email','$contact','$subject')";
+	$result=mysqli_query($link,$query) or die(mysqli_error($link));
+	if($result)
+	{
+		
+	?>
+		<script>
+			window.location="feedback.html";
+			window.alert("Thanks for the Feedback!")
+		</script>
+<?php
+		
+		
+	}
+	else
+	{
+		echo 'feedback failed';
+	}
+?>
