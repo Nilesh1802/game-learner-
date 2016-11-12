@@ -1,0 +1,470 @@
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}\
+
+/****end reset*****/
+body{
+ 	font-family:Arial, Helvetica, sans-serif;
+	margin: 0 auto;  /*CSS property to clean the default brower settings and set margin to 0 to align everything to center*/
+	width: 100%;
+	
+	
+}
+.wrap{
+	width:80%;
+	margin:0 auto;
+	transition:all .2s linear;
+	-moz-transition:all .2s linear;/* firefox */
+	-webkit-transition:all .2s linear; /* safari and chrome */
+	-o-transition:all .2s linear; /* opera */
+	-ms-transition:all .2s linear;
+}
+/*----start-header-----*/
+.header{
+	background:#323A45;
+	border-bottom:9px solid #323A45;
+}
+.logo{
+	float: left;
+	padding:25px;
+	color:red;
+}
+.top-nav{
+	position:absolute;
+	top:0px;
+	left:350px;
+}
+.top-nav ul li{
+	display:inline-block;
+	float:left;
+}
+.top-nav ul li a{
+	font-family: 'agency fb', sans-serif;
+	color: #d6d6d6;
+	padding:25px 28px;
+	display: block;
+	position: relative;
+	text-transform: uppercase;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+	font-size:23px;
+	position:relative;
+}
+.top-nav li.active a, .top-nav li a:hover {
+	color:#FFF;
+	background:black;
+}
+.nkhome{
+    margin-left:1155px;
+    top:20px;
+    position:absolute;
+    width:130px;
+    height:100px;
+}
+.nkhome a img:hover {
+    background:url(images/Login1.jpg);
+    position:absolute;
+    top:0px;
+    opacity:0.4;
+}
+
+
+/*----end-header-----*/
+
+
+/* start slider*/
+#slide {
+    margin: 0 auto; /*CSS property to clean the default brower settings and set margin to 0 to align everything to center*/
+    width: 100%;
+    position: relative; /*CSS property to to align the slider container with respect to browser page*/
+    top: 0;
+    left: 0;
+}
+
+#imgs img {
+    /*overlays all the imgs */
+    /*You see only the first img, for now*/
+    /*we want to show only 1 img at the time*/
+    width: 100%;
+    left: 0; /*CSS property to left position is set to 0*/
+    top: 0; /*CSS property to top position is set to 0*/
+    position: absolute;  /*CSS property to align  the slider images with respect to the #slide div */
+    transition: 1s;  /*CSS property for animation duration*/
+    visibility:hidden;  /*CSS property to hide all the images*/
+     height:85%;
+	 width:100%;
+	 
+	}
+
+#navi {
+    width: 100%;
+    padding-top: 40%;  /*CSS property to top position 40%*/
+}
+
+.left {
+    position: absolute;
+    top:35%;
+    left:60px;
+    width: 4%;
+    opacity:0.7;  /*CSS property for opacity of the left and right buttons. scales from 0 to 1. now set to 0.7 but u can change it anytime */
+}
+
+.right {
+    position: absolute;
+    top: 35%;
+    right:60px;
+    width: 4%;
+    opacity:0.7;
+}
+
+/*  end of slider*/
+
+/*---start-content  index page----*/
+
+
+#content{
+	z-index: 1;
+	position: absolute;
+	width:27%;
+	height:350px;
+	margin-left:50px;
+	top:600px;
+	border:2px solid gray;
+	color:gray;
+}
+#content1{
+	z-index: 1;
+	position: absolute;
+	width:27%;
+	height:350px;
+	top:600px;
+	left:490px;
+	border:2px solid gray;
+	color:gray;
+}
+#content2{
+	z-index: 1;
+	position: absolute;
+	width:27%;
+	height:350px;
+	top:600px;
+	right:50px;
+    border:2px solid gray;
+	color:gray;
+}
+
+
+/*  Aligning the game  description*/
+game1
+{
+position:absolute;
+top:20px;
+left:30px;
+}
+r{  
+    position:absolute;
+    top:180px;
+	margin-left:70px;
+	font-size:25px;
+	color:gray;
+}
+heading{
+  
+    position:absolute;
+    top:550px;
+	margin-left:50px;
+	font-size:30px;
+	color:black;
+    font-family:agency fb;
+}
+
+
+p{  
+    font-family:arial;
+    position:absolute;
+    top:220px;
+    padding-left:20px;
+	font-size:13px;
+	color:gray;
+}
+/*  Read more button */
+.mybutton1{
+	font-family:arial;
+    color:#323A45;
+	padding: 15px 15px;
+	font-size:14px;
+	text-transform: uppercase;
+	position:absolute;
+	top:294px;
+	left:220px;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+	cursor:pointer;
+	
+}
+.mybutton1:hover{
+	background-color:black;
+	color:gray;
+	}
+
+/* read more button*/	
+/*---start-footer-----*/
+#footer{
+	z-index: 1;
+	position: absolute;
+	width:100%;
+	height:70px;
+	top:1000px;
+	border:2px solid gray;
+	color:gray;
+	background-color:#323A45;
+}
+
+
+
+
+
+
+
+/* end of footer*/	
+	
+	
+	
+	/*---start-content index page----*/
+
+/*---start-contact----*/
+/*  Contact Form  ============================================================================= */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1;
+}
+.col{
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child{
+	margin-left:0;
+}	
+.span_2_of_3 {
+	width: 63.1%;
+	padding:1.5%; 
+}
+.span_1_of_3 {
+	width: 29.2%;
+	padding:1.5%; 
+}
+.span_2_of_3  h3,
+.span_1_of_3  h3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5em;
+	padding: 0.5em 0;
+	color: #012231;
+	text-transform: uppercase;
+}
+.contact-form{
+	position:relative;
+	padding-bottom:30px;
+}
+.contact-form div{
+	padding:5px 0;
+}
+.contact-form span{
+	display:block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.9em;
+	padding-bottom:5px;
+	color: #012231;
+	text-transform: uppercase;
+}
+.contact-form input[type="text"],.contact-form textarea{
+		   padding: 8px;
+			display: block;
+			width: 98%;
+			border: none;
+			outline: none;
+			color: #464646;
+			font-size: 0.8125em;
+			font-family: Arial, Helvetica, sans-serif;
+			border: 1px solid rgba(85, 85, 85, 0.19);
+			-webkit-appearance:none;
+}
+.contact-form textarea{
+		resize:none;
+		height:120px;		
+}
+.mybutton{
+	font-family: 'Roboto', sans-serif;
+	background: #012231;
+	color: #d6d6d6;
+	padding: 15px 40px;
+	font-size: 0.875em;
+	text-transform: uppercase;
+	display: block;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+	cursor:pointer;
+	border:none;
+}
+.mybutton:hover{
+	background: #00B895;
+	color: #FFF;
+}
+color:#00B895;
+}
+.option{
+	width: 150px;
+	height: 60px;
+	border: 20px;
+	display: block;
+	font-size: 20px;
+	padding: 17px;
+	text-align: center;
+	position : relative;
+}
+#menu{
+	height: 60px;
+	width: 80%;
+	margin-top: 10px;
+	margin-left: 130px;
+	background-color: #008AB8;
+	border: 0px solid;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	display: inline-block;
+}
+#thumbnail_container{
+	position: absolute;
+	width: 100%;
+	height: 45%;
+	background: #323A45;
+	top: 30%;
+}
+#fleft{
+	z-index: 10;
+	height: auto;
+	float: left;
+	width: auto;
+	position: relative;
+	top: 80px;
+	bottom: auto;
+}
+
+#fcenter{
+	z-index: 10;
+	position: relative;
+	height: auto;
+	float: center;
+	width: auto;
+	top: 80px;
+	bottom: auto;
+
+}
+
+#fright{
+	z-index: 10;
+	position: relative;
+	height: auto;
+	float: right;
+	width: auto;
+	top: 60px;
+	bottom: auto;
+	bottom: auto;
+
+}
+#fcontent{
+	font-size:30px;
+	color:black;
+    font-family:agency fb;
+	position: absolute;
+	left : 38%;
+	right : auto;
+	top: 17%;
+	bottom: auto;
+	float:center;
+	
+}
+#forumbody   {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	background-color: #cccccc;
+	bottom:  0px;
+	min-height:100%;
+	
+	
+}
+body{
+	width: 100%;
+	height: 100%;
+	min-height:100%;
+	min-width: 100%;
+	
+}
+ table,td,tr{
+	border: 1px black solid;
+}
+td{
+	height:100px;
+}
+table{
+	width:100%;
+	margin-top: 10%;
+	/*margin-left: 5%;*/
+	margin-right: 5%;
+	
+}
+}
+
+.nghome{
+    margin-left:1155px;
+    top:20px;
+    position:absolute;
+    width:50px;
+    height:50px;
+}
+
+
+
+.nkhome a img:hover {
+    background:url(images/logout.png);
+    position:absolute;
+    top:0px;
+    opacity:0.4;
+	
+}

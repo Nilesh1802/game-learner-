@@ -1,0 +1,164 @@
+
+
+/* GLOBALS */
+
+
+
+/* Demo 2 */
+
+.form-2 {
+    /* Size and position */
+    width: 330px;
+	height:350px;
+    margin: 60px;
+    padding: 15px;
+    position:absolute;
+    top:100px;
+	left:300px;
+    /* Styles */
+    background:#32;
+	border:2px solid gray;
+    color: black;
+	
+    }
+
+.form-2 h1 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #bdb5aa;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #EBE6E2;
+    text-shadow: 0 2px 0 rgba(255,255,255,0.8);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.8);
+}
+
+.form-2 h1 .log-in,
+.form-2 h1 .sign-up {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.form-2 h1 .log-in {
+    color: #6c6763;
+    padding-right: 2px;
+}
+
+.form-2 h1 .sign-up {
+    color: #ffb347;
+    padding-left: 2px;
+}
+
+.form-2 .float {
+    width: 50%;
+    float: left;
+    padding-top: 15px;
+	 font-size:18px;
+}
+r
+{
+font-family:verdana;
+font-size:16px;
+
+}
+.form-2 .float:first-of-type {
+    padding-right: 5px;
+	
+}
+
+.form-2 .float:last-of-type {
+    padding-left: 5px;
+	
+}
+
+
+
+
+/* input boxes */
+
+.form-2 input[type=text],
+.form-2 input[type=password] {
+    font-family:agency fb;
+    font-size: 16px;
+    font-weight: 400;
+    
+    width: 100%;
+    padding: 5px;
+   
+    border: 3px solid #ebe6e2;
+    border-radius: 5px;
+  }
+
+.mybutton{
+	font-family:arial;
+    
+	padding: 15px 15px;
+	font-size:14px;
+	text-transform: uppercase;
+	position:absolute;
+	top:320px;
+	left:120px;
+	height:50px;
+	width:100px;
+	cursor:pointer;
+	background-color:white;
+}
+.mybutton:hover{
+	background-color:black;
+	color:gray;
+	
+	}
+  
+ 
+
+}
+.top-nav{
+	position:absolute;
+	top:0px;
+	left:350px;
+}
+.top-nav ul li{
+	display:inline-block;
+	float:left;
+}
+.top-nav ul li a{
+	font-family: 'agency fb', sans-serif;
+	color:#323A45;;
+	padding:25px 28px;
+	display: block;
+	position: relative;
+	text-transform: uppercase;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+	font-size:23px;
+	position:relative;
+}
+.top-nav li.active a, .top-nav li a:hover {
+	color:#FFF;
+	background:black;
+} 
+  
+ .header{
+	
+	border-bottom:9px solid #323A45;
+}
+.logo{
+	float: left;
+	padding:25px;
+	color:red;
+}
+
+.wrap{
+	width:80%;
+	margin:0 auto;
+	transition:all .2s linear;
+	-moz-transition:all .2s linear;/* firefox */
+	-webkit-transition:all .2s linear; /* safari and chrome */
+	-o-transition:all .2s linear; /* opera */
+	-ms-transition:all .2s linear;
+}
+/*----start-header-----*/
+.header{
+	
+	border-bottom:9px solid #323A45;
+}
