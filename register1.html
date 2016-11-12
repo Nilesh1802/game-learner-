@@ -1,0 +1,185 @@
+<html>
+<head> <link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+<style>
+table
+{
+position:absolute;
+top:50px;
+left:100px;
+height:500px;
+width:400px;
+border:1px solid black;
+}
+#inner
+{
+z-index:1;
+position:absolute;
+top:0px;
+height:40px;
+left:0px;
+background-color:gray;
+width:100%;
+}
+
+t
+{
+position:absolute;
+top:5px;
+margin-left:20px;
+font-family:Trebuchet MS;
+font-size:26px;
+color:white;
+}
+
+
+input#sumbutton{
+cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+padding:5px 25px; /*add some padding to the inside of the button*/
+background:#323A45; /*the colour of the button*/
+border:1px solid #33842a; /*required or the default border for the browser will appear*/
+height:35px;
+width:120px;
+
+margin-left:50px;
+
+/*style the text*/
+color:white;
+font-size:18px;
+}
+/***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+input#gobutton:hover, input#gobutton:focus{
+background-color :black; /*make the background a little darker*/
+
+color:gray
+}
+
+
+input#resbutton{
+position:absolute;
+top:430px;
+left:220px;
+cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+padding:5px 25px; /*add some padding to the inside of the button*/
+background:#323A45; /*the colour of the button*/
+border:1px solid #33842a; /*required or the default border for the browser will appear*/
+height:35px;
+width:120px;
+/*style the text*/
+color:white;
+font-size:18px;
+}
+/***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+input#gobutton:hover, input#gobutton:focus{
+background-color :black; /*make the background a little darker*/
+
+color:gray
+}
+
+shift 
+{
+margin-left : 20px;
+}
+
+heading 
+{
+position : absolute;
+top : 120px;
+left : 120px;
+font-size : 40px;
+}
+
+
+
+
+
+</style>
+</head>
+
+<body>
+<!---start-header---->
+			<div class="header">
+				<div class="wrap">
+				<div class="logo">
+		         <br>
+			    </div>
+				<div class="top-nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="learn1.html">Learn</a></li>
+						<li  class="active"><a href="register1.html">Register</a></li>
+						
+						<li><a href="feedback1.html">Feedback</a></li>
+					</ul>
+				</div>
+				<div class="clear"> </div>
+			</div>
+		</div>
+<font face = "Trebuchet MS">
+	<heading><> GAMING ALWAYS <></heading>
+	
+    <form  method = "post" action="register.php"><br><br><br>
+				<table>
+				<tr>
+				<td>
+				<div id="inner" >
+				    <t>Not a Member ? Register Now </t>
+				
+				</div>
+				</td>
+				</tr>
+				
+				<tr>
+				<td>
+				
+					<shift>Details<br></shift><vr>
+					<br>
+
+					<shift>Name:<br></shift>
+					<shift><input type = "text" name = "name" placeholder = "First Name" autofocus required></shift>
+					&nbsp;
+
+					<br><br>
+
+					
+
+					
+
+					<shift>E-mail:<br></shift>
+					<shift><input type = "email" name = "mail" required></shift>
+					<br><br>
+
+					<shift>Username:<br></shift>
+					<shift><input type = "text" name = "username" required></shift>
+					<br><br>
+
+					<shift>Password:<br></shift>
+					<shift><input type = "password" name = "pass" placeholder = "Max 16 characters" maxlength = 16 required></shift>
+					<br><br>
+
+					
+				</td>
+            </tr>
+            
+           <tr>
+		   <td>
+		      <br><br>
+              <input id="sumbutton" type="submit" value="SUBMIT" /> 
+              <!--the text in the quotes after value will appear on the button-->
+              
+			
+			<input id="resbutton" type="submit" value="RESET" /> 
+              <!--the text in the quotes after value will appear on the button-->
+              
+		   </td>
+		   </tr>
+		   
+		   
+ 
+			
+	    </table>
+		</form>
+	 
+	   
+		
+</body>
+</html>

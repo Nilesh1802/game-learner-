@@ -1,0 +1,197 @@
+
+<!DOCTYPE HTML>
+<head>
+<title>Online Games</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+
+
+
+		 <script type="text/javascript">
+
+        //ok , it's working , we are done , if you want to add imgs you have to :
+
+        //1 - add an img tag with id : Img++; ex:  <img id="Img4" src="IMG/1.jpg"/>
+        //4 - change the value of nrImg 
+
+        var nrImg = 6;  //the number of img , we only have 6 
+        var IntSeconds = 4;     //the seconds between the imgs
+
+        function Load()
+        {
+            nrShown = 0;    //the img visible
+            Vect = new Array(nrImg + 10);
+            Vect[0] = document.getElementById("Img1");
+            Vect[0].style.visibility = "visible";
+
+            for (var i = 1; i < nrImg; i++)
+            {
+                Vect[i] = document.getElementById("Img" + (i + 1));
+            }
+
+            mytime = setInterval(Timer, IntSeconds * 1000);
+        }
+        function Timer()
+        {
+            nrShown++;
+            if (nrShown == nrImg)
+                nrShown = 0;
+            Effect();
+        }
+        //next img
+        function next()
+        {
+            nrShown++;
+            if (nrShown == nrImg)
+                nrShown = 0;
+            Effect();
+
+            clearInterval(mytime);
+            mytime = setInterval(Timer, IntSeconds * 1000);
+        }
+        function prev()
+        {
+            nrShown--;
+            if (nrShown == -1)
+                nrShown = nrImg -1;
+            Effect();
+
+            clearInterval(mytime);
+            mytime = setInterval(Timer, IntSeconds * 1000);
+        }
+        //here changes the img + effect
+        function Effect()
+        {
+            for (var i = 0; i < nrImg; i++)
+            {
+                Vect[i].style.opacity = "0";   //to add the fade effect
+                Vect[i].style.visibility = "hidden";
+            }
+            Vect[nrShown].style.opacity = "1";
+            Vect[nrShown].style.visibility = "visible";
+        }
+		
+    </script> 
+ </head>
+    <body bgcolor="white"> 
+		<!---start-header---->
+			<div class="header">
+				<div class="wrap">
+				<div class="logo">
+		         <br>
+			    </div>
+				<div class="top-nav">
+					<ul>
+						<li class="active"><a href="home.html">Home</a></li>
+						<li><a href="learn.html">Learn</a></li>
+						<li><a href="register.html">Register</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="feedback.html">Feedback</a></li>
+					</ul>
+				</div>
+				<div class="clear"> </div>
+			</div>
+		</div>
+		
+			<!---End-header---->
+		 <!--start-image-slider---->
+					      <body onload="Load()"> 
+        <div id="slide"> 
+            <div id="imgs"> 
+                <img id="Img2" src="images/2.jpg" alt="wow"> 
+                <img id="Img4" src="images/4.jpg" alt="lol">
+                <img id="Img5" src="images/5.jpg" alt="skyrim">
+                <img id="Img1" src="images/1.jpg" alt="lol">
+                <img id="Img3" src="images/3.jpg" alt="cs">
+                <img id="Img6" src="images/6.jpg" alt="lol">
+                
+            </div>
+            <div id="navi"> 
+                <img class="left" src="images/left.png" onclick="prev()"> 
+                <img class="right" src="images/right.png" onclick="next()">
+				</div>
+        </div>
+					
+		<!--End-image-slider---->
+		<!---End-wrap---->
+		<div class="clear"> </div>
+		
+		<!--Login option--->
+	   <div class="nkhome" style="position:absolute; top:5px;">
+			<a href="index.html"><img src="images/Logout.png" width="70px" height="70px" /></a>
+	   </div>
+		<!-- End of login--->
+				
+	    <!---Start of Content part 2--->
+		  <heading><b>TRENDING  :</b></heading>
+		  
+		<div id = "content"> 
+		<game1>
+		 
+		 <img src="images/7.jpg" height="150" width="300">
+        </game1>		
+		<r>League of Legends</r>
+		<p>After an age of warfare, the superpowers of the land of valoran have come together to form a governing body that will settle all disputes behind
+			the closed doors of the institute of war.Lgendary champions resolve their differences in battle arenas. </p>
+		   
+		                   <div><a href="http://na.leagueoflegends.com/">
+						   		<span><input type="submit" class="mybutton1" value="Read More"></span>
+						        </a>
+						  </div>
+		   
+		</div>	
+			 
+	     </div>
+		
+        
+        <div id = "content1"> 
+		<game1>
+		 
+		 <img src="images/8.jpg" height="150" width="300">
+        </game1>		
+		<r>Cs Global Offensive</r>
+		<p>
+		Counter-Strike: Global Offensive expands upon the team-based action gameplay
+		that it pioneered with half-life: counter-strike.CS:GO features new maps,
+		characters,weapons and delivers updated versions.</p>
+	           <div><a href="http://blog.counter-strike.net/">
+						   		<span><input type="submit" class="mybutton1" value="Read More"></span>
+						        </a>
+						  </div>
+		  
+            </div>
+		
+		<div id = "content2"> 
+		<game1>
+		 
+		 <img src="images/9.jpg" height="150" width="300">
+        </game1>		
+		<r>World of Warcraft</r>
+		<p>Developer blizzard gives players a new perspective into the popular
+			massively multiplayer Warcraft series with its new title, World of
+			Warcraft. see the world of azeroth like never before,exploring expansive
+			3d environments that range from mountains deserts and more.</p>
+		   
+		    <div><a href="http://us.battle.net/wow/en/?-">
+						   		<span><input type="submit" class="mybutton1" value="Read More"></span>
+						        </a>
+						  </div>
+		     </div>
+		
+        <!---End of Content part 2--->
+	    
+      
+        <!---start-footer---->
+		  <div id="footer">
+		  
+	
+	
+          </div>
+        <!--end of footer --> 	
+	
+		</body>
+</html>
+
